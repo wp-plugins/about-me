@@ -4,7 +4,7 @@ Plugin Name: About Me
 Plugin URI: http://abisso.org/index.php/projects/about-me/
 Description: About Me is a sidebar widget that displays icon links to your profile pages on other social networking sites. Forked from <a href="http://blog.maybe5.com/?page_id=94">Social Links</a>
 Author: Alessio Caiazza
-Version: 1.0.0
+Version: 1.0.1
 Author URI: http://alessiocaiazza.info
 
 /*  Social Links Copyright 2008  Kareem Sultan  (email : kareemsultan@gmail.com) */
@@ -32,7 +32,7 @@ http://www.gnu.org/licenses/gpl.txt
 		register_activation_hook(__FILE__,'social_links_install');
 		
 //TO DO use these definitions instead
-define('SOCIAL_LINKS_VERSION', '1.0.0');
+define('SOCIAL_LINKS_VERSION', '1.0.1');
 define('SOCIAL_LINKS_DB_VERSION', '1.1');
 
 define('KEY_SITE_ID',0);
@@ -70,10 +70,17 @@ define('KEY_DISPLAY_NAME',4);
 	 array(21,'friendfeed.png','http://friendfeed.com/%userid%','Enter your FriendFeed username.','FriendFeed'),
 	 array(22,'identica.png','http://identi.ca/%userid%','Enter your Identi.ca username.','Identi.ca'),
 	 array(23,'bitbucket.png','http://bitbucket.org/%userid%','Enter your Bitbucket username.','Bitbucket'),
-	 array(24,'github.png','http://github.com/%userid%','Enter your Github username.','Github')
+	 array(24,'github.png','http://github.com/%userid%','Enter your Github username.','Github'),
+	 array(25,'hellotxt.gif','http://hellotxt.com/user/%userid%','Enter your Hellotxt username.','Hellotxt')
    );
 
+//comparison based on socialnetwok name
+function compare_social($s1, $s2) {
+	return strcmp($s1[4], $s2[4]);
+}
 
+//Sorts socialnetworks in alphabetical order
+uasort($definitions, "compare_social");
 
 
 function social_links_wrapper(){
@@ -131,7 +138,7 @@ if ( !function_exists('register_sidebar_widget') || !function_exists('register_w
 						<label for="social-links-title">Widget title: <input type="text" id="social-links-title" name="social-links-title" value="<?php echo $title; ?>" /></label>
 					</td></tr>
 					<tr><td>
-						<label for="social-links-width">Width: <input type="text" id="social-links-width" name="social-links-width" style="width:25px;" value="<?php echo $width; ?>" /> pixels</label>
+						<label for="social-links-width">Width: <input type="text" id="social-links-width" name="social-links-width" size="8" value="<?php echo $width; ?>" /> pixels</label>
 					</td></tr>
 				</table>
 				<input type="hidden" name="social-links-submit" id="social-links-submit" value="1" />
@@ -311,10 +318,10 @@ if ( !function_exists('register_sidebar_widget') || !function_exists('register_w
 		function social_links_admin_menu(){
 			global $pluginrelativedir;
 			//add_options_page('Social Links Settings', 'Social Links', 8,$pluginrelativedir.'/edit-sociallinks.php');
-			add_management_page('Social Links Settings (About Me)', 'Social Links', 8,__FILE__,'widget_social_links_settings');
+			add_management_page('Social Links Settings - About Me', 'About Me', 8,__FILE__,'widget_social_links_settings');
 
 			global $plugindir;
-			wp_enqueue_script('social-links', $plugindir . '/javascript.js',array('sack'));
+			wp_enqueue_script('about-me', $plugindir . '/javascript.js',array('sack'));
 			wp_enqueue_script('scriptaculous');
 		}
 		
@@ -343,8 +350,8 @@ if ( !function_exists('register_sidebar_widget') || !function_exists('register_w
 			add_action('wp_ajax_social_links_add_network', 'wp_ajax_social_links_add_network' );
 			add_action('wp_ajax_social_links_delete_network', 'wp_ajax_social_links_delete_network' );
 			
-			register_sidebar_widget('Social Links', 'widget_social_links');
-			register_widget_control('Social Links', 'widget_social_links_control');
+			register_sidebar_widget('About Me - Social Links', 'widget_social_links');
+			register_widget_control('About Me - Social Links', 'widget_social_links_control');
 		
 	}//End of SocialLinks class
 
