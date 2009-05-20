@@ -37,6 +37,7 @@ This plugin is forked from [SocialLinks](http://blog.maybe5.com/?page_id=94 "Soc
 * Flickr
 * FriendFeed
 * Github
+* Hellotxt
 * Identi.ca
 * Jeqq
 * Last FM
@@ -64,7 +65,7 @@ This plugin is forked from [SocialLinks](http://blog.maybe5.com/?page_id=94 "Soc
 
 1. Add the widget to your sidebar from the 'Widgets' design page.
 
-1. Add your social links from the 'Social Links' page under the 'Management' page.
+1. Add your social links from the 'About Me' page under the 'Management' page.
 
 
 
@@ -93,4 +94,5 @@ I will add suggested sites in upcoming releases.
 
 
 == Change Log ==
+* 1.0.1 NEW:Hellotxt support; Minor changes in widget option layout; Widget renamed to 'About Me - Social Links'; Management page renamed to 'About Me'
 * 1.0.0 NEW:Bitbucket, Identi.ca, GitHub support FIX:now works with Lightbox2/Slimbox plugins
