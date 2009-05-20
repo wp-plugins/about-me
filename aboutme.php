@@ -4,7 +4,7 @@ Plugin Name: About Me
 Plugin URI: http://abisso.org/index.php/projects/about-me/
 Description: About Me is a sidebar widget that displays icon links to your profile pages on other social networking sites. Forked from <a href="http://blog.maybe5.com/?page_id=94">Social Links</a>
 Author: Alessio Caiazza
-Version: 1.0.0
+Version: 1.0.2
 Author URI: http://alessiocaiazza.info
 
 /*  Social Links Copyright 2008  Kareem Sultan  (email : kareemsultan@gmail.com) */
@@ -29,10 +29,10 @@ http://www.gnu.org/licenses/gpl.txt
 */
 
 //call install function upon activation
-		register_activation_hook(__FILE__,'social_links_install');
-		
+register_activation_hook(__FILE__,'social_links_install');
+
 //TO DO use these definitions instead
-define('SOCIAL_LINKS_VERSION', '1.0.0');
+define('SOCIAL_LINKS_VERSION', '1.0.2');
 define('SOCIAL_LINKS_DB_VERSION', '1.1');
 
 define('KEY_SITE_ID',0);
@@ -41,39 +41,47 @@ define('KEY_URL_TEMPLATE',2);
 define('KEY_INSTRUCTION',3);
 define('KEY_DISPLAY_NAME',4);
   
- //$sl_db_version = "1.0";
- $plugindir = get_settings('home').'/wp-content/plugins/'.dirname(plugin_basename(__FILE__));
- $pluginrelativedir = '/wp-content/plugins/'.dirname(plugin_basename(__FILE__));
+//$sl_db_version = "1.0";
+$plugindir = get_settings('home').'/wp-content/plugins/'.dirname(plugin_basename(__FILE__));
+$pluginrelativedir = '/wp-content/plugins/'.dirname(plugin_basename(__FILE__));
 
- $definitions = array(
-	 array(0,'facebook.png','%userid%','Enter your complete Facebook profile URL','Facebook'),
-	 array(1,'myspace.png','%userid%','Enter your complete MySpace URL.','MySpace'),
-	 array(2,'linkedin.png','%userid%','Enter your complete LinkedIn URL.','LinkedIn'),
-   array(3,'picasa.png','http://picasaweb.google.com/%userid%','Enter your Picasa(Google) username.','Picasa Web Album'),
-	 array(4,'flickr.png','http://flickr.com/photos/%userid%','Enter your flickr username','Flickr'),
-	 array(5,'youtube.png','http://www.youtube.com/%userid%','Enter your YouTube username','YouTube'),
-	 array(6,'twitter.png','http://twitter.com/%userid%','Enter your Twitter username','Twitter'),
-	 array(7,'pownce.png','http://pownce.com/%userid%','Enter your Pownce username','Pownce'),
-	 array(8,'plurk.png','http://www.plurk.com/user/%userid%','Enter your Plurk username','Plurk'),
-	 array(9,'digg.png','http://www.digg.com/users/%userid%','Enter your Digg username.','Digg'),
-	 array(10,'delicious.png','http://delicious.com/%userid%','Enter your Delicious username','Delicious'),
-	 array(11,'blogmarks.png','http://blogmarks.net/user/%userid%','Enter your BlogMarks username.','BlogMarks'),
-	 array(12,'stumbleupon.png','http://%userid%.stumbleupon.com','Enter your Stumble Upon username','Stumble Upon'),
-   array(13,'lastfm.png','http://www.last.fm/user/%userid%','Enter your Last.fm username','Last.fm'),
-	 array(14,'amazon.png','%userid%','Enter your complete Amazon Wishlist URL','Amazon Wishlist'),
-	 array(15,'blog.png','%userid%','Enter the complete blog URL.','Blog'),
-	 array(16,'jeqq.png','http://www.jeqq.com/user/view/profile/%userid%','Enter your Jeqq username','Jeqq'),
-   array(17,'dapx.png','%userid%','Enter your complete Dapx URL.','Dapx'),
-	 array(18,'xing.jpg','%userid%','Enter your complete Xing URL.','Xing'),
-	 array(19,'sixent.png','http://%userid%.sixent.com/','Enter your Sixent username','Sixent'),
-	 array(20,'technorati.jpg','http://technorati.com/people/technorati/%userid%/','Enter your Technorati username.','Technorati'),
-	 array(21,'friendfeed.png','http://friendfeed.com/%userid%','Enter your FriendFeed username.','FriendFeed'),
-	 array(22,'identica.png','http://identi.ca/%userid%','Enter your Identi.ca username.','Identi.ca'),
-	 array(23,'bitbucket.png','http://bitbucket.org/%userid%','Enter your Bitbucket username.','Bitbucket'),
-	 array(24,'github.png','http://github.com/%userid%','Enter your Github username.','Github')
-   );
+$definitions = array(
+	array(0,'facebook.png','%userid%','Enter your complete Facebook profile URL','Facebook'),
+	array(1,'myspace.png','%userid%','Enter your complete MySpace URL.','MySpace'),
+	array(2,'linkedin.png','%userid%','Enter your complete LinkedIn URL.','LinkedIn'),
+	array(3,'picasa.png','http://picasaweb.google.com/%userid%','Enter your Picasa(Google) username.','Picasa Web Album'),
+	array(4,'flickr.png','http://flickr.com/photos/%userid%','Enter your flickr username','Flickr'),
+	array(5,'youtube.png','http://www.youtube.com/%userid%','Enter your YouTube username','YouTube'),
+	array(6,'twitter.png','http://twitter.com/%userid%','Enter your Twitter username','Twitter'),
+	array(7,'pownce.png','http://pownce.com/%userid%','Enter your Pownce username','Pownce'),
+	array(8,'plurk.png','http://www.plurk.com/user/%userid%','Enter your Plurk username','Plurk'),
+	array(9,'digg.png','http://www.digg.com/users/%userid%','Enter your Digg username.','Digg'),
+	array(10,'delicious.png','http://delicious.com/%userid%','Enter your Delicious username','Delicious'),
+	array(11,'blogmarks.png','http://blogmarks.net/user/%userid%','Enter your BlogMarks username.','BlogMarks'),
+	array(12,'stumbleupon.png','http://%userid%.stumbleupon.com','Enter your Stumble Upon username','Stumble Upon'),
+	array(13,'lastfm.png','http://www.last.fm/user/%userid%','Enter your Last.fm username','Last.fm'),
+	array(14,'amazon.png','%userid%','Enter your complete Amazon Wishlist URL','Amazon Wishlist'),
+	array(15,'blog.png','%userid%','Enter the complete blog URL.','Blog'),
+	array(16,'jeqq.png','http://www.jeqq.com/user/view/profile/%userid%','Enter your Jeqq username','Jeqq'),
+	array(17,'dapx.png','%userid%','Enter your complete Dapx URL.','Dapx'),
+	array(18,'xing.jpg','%userid%','Enter your complete Xing URL.','Xing'),
+	array(19,'sixent.png','http://%userid%.sixent.com/','Enter your Sixent username','Sixent'),
+	array(20,'technorati.jpg','http://technorati.com/people/technorati/%userid%/','Enter your Technorati username.','Technorati'),
+	array(21,'friendfeed.png','http://friendfeed.com/%userid%','Enter your FriendFeed username.','FriendFeed'),
+	array(22,'identica.png','http://identi.ca/%userid%','Enter your Identi.ca username.','Identi.ca'),
+	array(23,'bitbucket.png','http://bitbucket.org/%userid%','Enter your Bitbucket username.','Bitbucket'),
+	array(24,'github.png','http://github.com/%userid%','Enter your Github username.','Github'),
+	array(25,'hellotxt.gif','http://hellotxt.com/user/%userid%','Enter your Hellotxt username.','Hellotxt'),
+	array(26,'hyves.png','http://%userid%.hyves.nl','Enter your Hyves.nl username.','Hyves.nl')
+);
 
+//comparison based on socialnetwok name
+function compare_social($s1, $s2) {
+	return strcmp($s1[KEY_DISPLAY_NAME], $s2[KEY_DISPLAY_NAME]);
+}
 
+//Sorts socialnetworks in alphabetical order
+uasort($definitions, "compare_social");
 
 
 function social_links_wrapper(){
@@ -131,7 +139,7 @@ if ( !function_exists('register_sidebar_widget') || !function_exists('register_w
 						<label for="social-links-title">Widget title: <input type="text" id="social-links-title" name="social-links-title" value="<?php echo $title; ?>" /></label>
 					</td></tr>
 					<tr><td>
-						<label for="social-links-width">Width: <input type="text" id="social-links-width" name="social-links-width" style="width:25px;" value="<?php echo $width; ?>" /> pixels</label>
+						<label for="social-links-width">Width: <input type="text" id="social-links-width" name="social-links-width" size="8" value="<?php echo $width; ?>" /> pixels</label>
 					</td></tr>
 				</table>
 				<input type="hidden" name="social-links-submit" id="social-links-submit" value="1" />
@@ -240,55 +248,53 @@ if ( !function_exists('register_sidebar_widget') || !function_exists('register_w
 		 	
 		 }
 		 
-		 function generateSocialLinksInnerHTML(){
-		 	global $definitions;
-		 	global $plugindir;
-      
-		 	$options = get_option('widget_social_links');
-			
-		 	$rows = getSocialLinks();
-		 	if(count($rows)==0)
-		 		return;
-		 	////WPD_print("Found".count($rows)." networks.");
-		 	
-		 	foreach ($rows as $row) {
-		 		//WPD_print("SiteID: " . $row[1]);
-		 		$linkInfoArray = $definitions[$row[1]];
-		 		//WPD_print('network info '. $linkInfoArray);
-		 		$url = str_replace("%userid%",$row[2],$linkInfoArray[KEY_URL_TEMPLATE]);
-				$innerHTML = $innerHTML . "<a id='link_$row[0]' href='$url' rel='me'><img src='$plugindir/images/".$linkInfoArray[KEY_IMAGE]."' alt='".$linkInfoArray[KEY_DISPLAY_NAME]."'/></a>";
+		function generateSocialLinksInnerHTML(){
+			global $definitions;
+			global $plugindir;
+
+			$rows = getSocialLinks();
+			if(count($rows)==0)
+				return;
+			////WPD_print("Found".count($rows)." networks.");
+
+			foreach ($rows as $row) {
+				//WPD_print("SiteID: " . $row[1]);
+				$linkInfoArray = $definitions[$row[1]];
+				//WPD_print('network info '. $linkInfoArray);
+				$url = str_replace("%userid%",$row[2],$linkInfoArray[KEY_URL_TEMPLATE]);
+				$innerHTML = $innerHTML . "<a id='link_$row[0]' href='$url' rel='me'><img src='$plugindir/images/".$linkInfoArray[KEY_IMAGE]."' alt='".$linkInfoArray[KEY_DISPLAY_NAME]."' title='".$linkInfoArray[KEY_DISPLAY_NAME]."'/></a>";
 				if($row != $rows[count($rows)-1]){
 					$innerHTML = $innerHTML."\n";
 				}
 			}
-			
+
 			return $innerHTML;
-		 }
+		}
 		 
-		 function generateSocialLinksPreviewInnerHTML($delimiter){
-		 	global $definitions;
-		 	global $plugindir;
-      
-		 	$rows = getSocialLinks();
-		 	if(count($rows)==0)
-		 		return;
-		 	//WPD_print("Found ".count($rows)." networks.");
-		 	
-		 	foreach ($rows as $row) {
-		 		//WPD_print("SiteID: " . $row[2]);
-		 		//var_dump($row);
-		 		$linkInfoArray = $definitions[$row[1]];
-		 		//var_dump($linkInfoArray);
-		 		//WPD_print('network info '. $linkInfoArray);
-		 		$url = str_replace("%userid%",$row[2],$linkInfoArray[KEY_URL_TEMPLATE]);
-				$innerHTML = $innerHTML . "<span id='link_$row[0]' title='$url'><img style='margin:2px' src='$plugindir/images/".$linkInfoArray[KEY_IMAGE]."' alt='".$linkInfoArray[KEY_DISPLAY_NAME]."'/></span>";
+		function generateSocialLinksPreviewInnerHTML($delimiter){
+			global $definitions;
+			global $plugindir;
+
+			$rows = getSocialLinks();
+			if(count($rows)==0)
+				return;
+			//WPD_print("Found ".count($rows)." networks.");
+
+			foreach ($rows as $row) {
+				//WPD_print("SiteID: " . $row[2]);
+				//var_dump($row);
+				$linkInfoArray = $definitions[$row[1]];
+				//var_dump($linkInfoArray);
+				//WPD_print('network info '. $linkInfoArray);
+				$url = str_replace("%userid%",$row[2],$linkInfoArray[KEY_URL_TEMPLATE]);
+				$innerHTML = $innerHTML . "<span id='link_$row[0]' title='$url'><img style='margin:2px' src='$plugindir/images/".$linkInfoArray[KEY_IMAGE]."' alt='".$linkInfoArray[KEY_DISPLAY_NAME]."' title='".$linkInfoArray[KEY_DISPLAY_NAME]."'/></span>";
 				if($row != $rows[count($rows)-1]){
 					$innerHTML = $innerHTML.$delimiter;
 				}
 			}
-			
+
 			return $innerHTML;
-		 }
+		}
 		 
 		 /*
 		 function generateSocialLinksData(){
@@ -311,10 +317,10 @@ if ( !function_exists('register_sidebar_widget') || !function_exists('register_w
 		function social_links_admin_menu(){
 			global $pluginrelativedir;
 			//add_options_page('Social Links Settings', 'Social Links', 8,$pluginrelativedir.'/edit-sociallinks.php');
-			add_management_page('Social Links Settings (About Me)', 'Social Links', 8,__FILE__,'widget_social_links_settings');
+			add_management_page('Social Links Settings - About Me', 'About Me', 8,__FILE__,'widget_social_links_settings');
 
 			global $plugindir;
-			wp_enqueue_script('social-links', $plugindir . '/javascript.js',array('sack'));
+			wp_enqueue_script('about-me', $plugindir . '/javascript.js',array('sack'));
 			wp_enqueue_script('scriptaculous');
 		}
 		
@@ -343,8 +349,8 @@ if ( !function_exists('register_sidebar_widget') || !function_exists('register_w
 			add_action('wp_ajax_social_links_add_network', 'wp_ajax_social_links_add_network' );
 			add_action('wp_ajax_social_links_delete_network', 'wp_ajax_social_links_delete_network' );
 			
-			register_sidebar_widget('Social Links', 'widget_social_links');
-			register_widget_control('Social Links', 'widget_social_links_control');
+			register_sidebar_widget('About Me - Social Links', 'widget_social_links');
+			register_widget_control('About Me - Social Links', 'widget_social_links_control');
 		
 	}//End of SocialLinks class
 
