@@ -1,4 +1,4 @@
-=== About me ===
+=== About Me ===
 
 Contributors: nolith
 Donate link: https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=5570803
