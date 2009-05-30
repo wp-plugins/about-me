@@ -70,7 +70,8 @@ define('KEY_DISPLAY_NAME',4);
 	 array(21,'friendfeed.png','http://friendfeed.com/%userid%','Enter your FriendFeed username.','FriendFeed'),
 	 array(22,'identica.png','http://identi.ca/%userid%','Enter your Identi.ca username.','Identi.ca'),
 	 array(23,'bitbucket.png','http://bitbucket.org/%userid%','Enter your Bitbucket username.','Bitbucket'),
-	 array(24,'github.png','http://github.com/%userid%','Enter your Github username.','Github')
+	 array(24,'github.png','http://github.com/%userid%','Enter your Github username.','Github'),
+	 array(25,'hellotxt.gif','http://hellotxt.com/user/%userid%','Enter your Hellotxt username.','Hellotxt')
    );
 
 //comparison based on socialnetwok name
