@@ -3,7 +3,7 @@
 Contributors: nolith
 Donate link: https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=5570803
 
-Tags: widget,sidebar,Social network, profile page,social link,icon links,about me,Amazon, Wishlist, Bitbucket, Blogs, BlogMarks, Dapx, Delicious, Digg, Facebook, Flickr, FriendFeed, Github, Identi.ca, Jeqq, Last FM, Linked In, My Space, Picasa Web Albums, Plurk, Pownce, Sixent, Stumble Upon, Technorati, Twitter, YouTube, Xing 
+Tags: widget,sidebar,Social network, profile page,social link,icon links,about me, XFN, Amazon, Wishlist, Bitbucket, Blogs, BlogMarks, Dapx, Delicious, Digg, Facebook, Flickr, FriendFeed, Github, Identi.ca, Jeqq, Last FM, Linked In, My Space, Picasa Web Albums, Plurk, Pownce, Sixent, Stumble Upon, Technorati, Twitter, YouTube, Xing, Hellotxt
 
 Requires at least: 2.6
 Tested up to: 2.7.1
@@ -19,7 +19,7 @@ About me is a sidebar widget that displays icon links to your profile pages on o
 
 
 
-About me is a sidebar widget that displays icon links to your profile pages on other social networking sites.
+About me is a sidebar widget that displays icon links to your profile pages on other social networking sites. All the icons has `rel="me"` tag. ([XFN compliant](http://www.gmpg.org/xfn/ "XFN compliant")).
 This plugin is forked from [SocialLinks](http://blog.maybe5.com/?page_id=94 "Social Links page")
 
 
@@ -81,8 +81,9 @@ Just post a comment to [my blog](http://abisso.org/index.php/projects/about-me/)
 
 I will add suggested sites in upcoming releases.
 
+= I've updated from 1.0.0 to 1.0.1 and my widget disappered =
 
-
+From version 1.0.0 to 1.0.1 About Me widget has been renamed to 'About Me - Social Link', so you have simply to add it from the widgets page.
 
 == Screenshots ==
 
