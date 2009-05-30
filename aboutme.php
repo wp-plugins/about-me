@@ -73,7 +73,13 @@ define('KEY_DISPLAY_NAME',4);
 	 array(24,'github.png','http://github.com/%userid%','Enter your Github username.','Github')
    );
 
+//comparison based on socialnetwok name
+function compare_social($s1, $s2) {
+	return strcmp($s1[4], $s2[4]);
+}
 
+//Sorts socialnetworks in alphabetical order
+uasort($definitions, "compare_social");
 
 
 function social_links_wrapper(){
