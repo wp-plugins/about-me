@@ -1,14 +1,12 @@
 === About me ===
 
-Contributors: nolith, kareemsultan
+Contributors: nolith
+Donate link: https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=5570803
 
-
-Tags: widget,sidebar,Social network, profile page,social link,icon links
+Tags: widget,sidebar,Social network, profile page,social link,icon links,about me,Amazon, Wishlist, Bitbucket, Blogs, BlogMarks, Dapx, Delicious, Digg, Facebook, Flickr, FriendFeed, Github, Identi.ca, Jeqq, Last FM, Linked In, My Space, Picasa Web Albums, Plurk, Pownce, Sixent, Stumble Upon, Technorati, Twitter, YouTube, Xing 
 
 Requires at least: 2.6
-
 Tested up to: 2.7.1
-
 Stable tag: 1.0.0
 
 
