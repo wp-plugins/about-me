@@ -6,7 +6,7 @@ Donate link: https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_i
 Tags: widget,sidebar,Social network, profile page,social link,icon links,about me, XFN, Amazon, Wishlist, Bitbucket, Blogs, BlogMarks, Dapx, Delicious, Digg, Facebook, Flickr, FriendFeed, Github, Identi.ca, Jeqq, Last FM, Linked In, My Space, Picasa Web Albums, Plurk, Pownce, Sixent, Stumble Upon, Technorati, Twitter, YouTube, Xing, Hellotxt, Hyves.nl, Hyves.net
 
 Requires at least: 2.6
-Tested up to: 2.7.1
+Tested up to: 2.8-beta2
 Stable tag: 1.0.2
 
 About me is a sidebar widget that displays icon links to your profile pages on other social networking sites. Based on Social Links.
@@ -61,7 +61,7 @@ hyves.nl support, title tag added to images.
 
 1. Add the widget to your sidebar from the 'Widgets' design page.
 
-1. Add your social links from the 'About Me' page under the 'Management' page.
+1. Add your social links from the 'About Me' page under the 'Tools' page.
 
 == Frequently Asked Questions ==
 
