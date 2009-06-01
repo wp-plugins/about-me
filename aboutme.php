@@ -4,7 +4,7 @@ Plugin Name: About Me
 Plugin URI: http://abisso.org/index.php/projects/about-me/
 Description: About Me is a sidebar widget that displays icon links to your profile pages on other social networking sites. Forked from <a href="http://blog.maybe5.com/?page_id=94">Social Links</a>
 Author: Alessio Caiazza
-Version: 1.0.2
+Version: 1.0.3
 Author URI: http://alessiocaiazza.info
 
 /*  Social Links Copyright 2008  Kareem Sultan  (email : kareemsultan@gmail.com) */
@@ -32,7 +32,7 @@ http://www.gnu.org/licenses/gpl.txt
 register_activation_hook(__FILE__,'social_links_install');
 
 //TO DO use these definitions instead
-define('SOCIAL_LINKS_VERSION', '1.0.2');
+define('SOCIAL_LINKS_VERSION', '1.0.3');
 define('SOCIAL_LINKS_DB_VERSION', '1.1');
 
 define('KEY_SITE_ID',0);
@@ -72,7 +72,8 @@ $definitions = array(
 	array(23,'bitbucket.png','http://bitbucket.org/%userid%','Enter your Bitbucket username.','Bitbucket'),
 	array(24,'github.png','http://github.com/%userid%','Enter your Github username.','Github'),
 	array(25,'hellotxt.gif','http://hellotxt.com/user/%userid%','Enter your Hellotxt username.','Hellotxt'),
-	array(26,'hyves.png','http://%userid%.hyves.nl','Enter your Hyves.nl username.','Hyves.nl')
+	array(26,'hyves.png','http://%userid%.hyves.nl','Enter your Hyves.nl username.','Hyves.nl'),
+	array(27,'disqus.png','http://disqus.com/people/%userid%','Enter your Disqus username.','Disqus')
 );
 
 //comparison based on socialnetwok name
