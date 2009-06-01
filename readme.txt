@@ -7,7 +7,7 @@ Tags: widget,sidebar,Social network, profile page,social link,icon links,about m
 
 Requires at least: 2.6
 Tested up to: 2.8-beta2
-Stable tag: 1.0.2
+Stable tag: 1.0.3
 
 About me is a sidebar widget that displays icon links to your profile pages on other social networking sites. Based on Social Links.
 
