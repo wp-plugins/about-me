@@ -84,6 +84,5 @@ From version 1.0.0 to 1.0.1 About Me widget has been renamed to 'About Me - Soci
 * 1.0.4 NEW:redgage.com support
 * 1.0.3 NEW:Disqus.com support
 * 1.0.2 NEW:Hyves.nl support; MINOR: title tag added to images
-* 1.0.1 NEW:Hellotxt support; Minor changes in widget option layout; Widget
-* renamed to 'About Me - Social Links'; Management page renamed to 'About Me'
+* 1.0.1 NEW:Hellotxt support; Minor changes in widget option layout; Widget renamed to 'About Me - Social Links'; Management page renamed to 'About Me'
 * 1.0.0 NEW:Bitbucket, Identi.ca, GitHub support FIX:now works with Lightbox2/Slimbox plugins
