@@ -32,7 +32,7 @@ http://www.gnu.org/licenses/gpl.txt
 register_activation_hook(__FILE__,'social_links_install');
 
 //TO DO use these definitions instead
-define('SOCIAL_LINKS_VERSION', '1.0.4');
+define('SOCIAL_LINKS_VERSION', '1.0.5');
 define('SOCIAL_LINKS_DB_VERSION', '1.1');
 
 define('KEY_SITE_ID',0);
