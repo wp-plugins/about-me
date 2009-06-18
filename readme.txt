@@ -3,7 +3,7 @@
 Contributors: nolith
 Donate link: https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=5570803
 
-Tags: widget,sidebar,Social network, profile page,social link,icon links,about me, XFN, Amazon, Wishlist, Bitbucket, Blogs, BlogMarks, Dapx, Delicious, Digg, Facebook, Flickr, FriendFeed, Github, Identi.ca, Jeqq, Last FM, Linked In, My Space, Picasa Web Albums, Plurk, Pownce, Sixent, Stumble Upon, Technorati, Twitter, YouTube, Xing, Hellotxt, Hyves.nl, Hyves.net, Disqus, redgage, GoodReads, Google Profile, Google Reader, Qype, Orkut
+Tags: widget,sidebar,Social network, profile page,social link,icon links,about me, XFN, Amazon, Wishlist, Bitbucket, Blogs, BlogMarks, Dapx, Delicious, Digg, Facebook, Flickr, FriendFeed, Github, Identi.ca, Jeqq, Last FM, Linked In, My Space, Picasa Web Albums, Plurk, Pownce, Sixent, Stumble Upon, Technorati, Twitter, YouTube, Xing, Hellotxt, Hyves.nl, Hyves.net, Disqus, redgage, GoodReads, Google Profile, Google Reader, Qype, Orkut, ebay
 
 Requires at least: 2.6
 Tested up to: 2.8
@@ -17,7 +17,7 @@ About me is a sidebar widget that displays icon links to your profile pages on o
 This plugin is forked from [SocialLinks](http://blog.maybe5.com/?page_id=94 "Social Links page")
 
 **What's new**
-Google reader support, Google profile support, Orkut support, GoodReads support, Qype support.
+Google reader support, Google profile support, Orkut support, GoodReads support, Qype support. Ebay support.
 
 
 **Supported Networks:**
@@ -31,6 +31,7 @@ Google reader support, Google profile support, Orkut support, GoodReads support,
 * Delicious
 * Digg
 * Disqus
+* Ebay
 * Facebook
 * Flickr
 * FriendFeed
@@ -86,7 +87,7 @@ From version 1.0.0 to 1.0.1 About Me widget has been renamed to 'About Me - Soci
 1. About Me sidebar widget
 
 == Change Log ==
-* 1.0.5 NEW:works on subpath installation. goodreads.com, orkut, google profile, google reader, qype support
+* 1.0.5 NEW:works on subpath installation. goodreads.com, orkut, google profile, google reader, qype, ebay support
 * 1.0.4 NEW:redgage.com support
 * 1.0.3 NEW:Disqus.com support
 * 1.0.2 NEW:Hyves.nl support; MINOR: title tag added to images

@@ -78,7 +78,8 @@ array(29,'goodreads.png','http://goodreads.com/%userid%','Enter your GoodReads u
 array(30,'qype.png','http://www.qype.com/people/%userid%','Enter your Qype username.','Qype'),
 array(31,'orkut.png','http://www.orkut.com/Main#Profile.aspx?uid=%userid%','Enter your Orkut numeric uid.','Orkut'),
 array(32,'google.png','http://www.google.com/profiles/%userid%','Enter your Google username (without @google.com).','Google Profile'),
-array(33,'googlereader.png','http://www.google.com/reader/shared/%userid%','Enter your Google Reader shared number.','Google Reader')
+array(33,'googlereader.png','http://www.google.com/reader/shared/%userid%','Enter your Google Reader shared number.','Google Reader'),
+array(34,'ebay.png','http://myworld.ebay.com/%userid%','Enter your Ebay username.','Ebay')
 );
 
 //comparison based on socialnetwok name
