@@ -42,8 +42,7 @@ define('KEY_INSTRUCTION',3);
 define('KEY_DISPLAY_NAME',4);
 
 //$sl_db_version = "1.0";
-$plugindir = get_settings('home').'/wp-content/plugins/'.dirname(plugin_basename(__FILE__));
-$pluginrelativedir = '/wp-content/plugins/'.dirname(plugin_basename(__FILE__));
+$plugindir = get_bloginfo('wpurl').'/wp-content/plugins/'.dirname(plugin_basename(__FILE__));
 
 $definitions = array(
 array(0,'facebook.png','%userid%','Enter your complete Facebook profile URL','Facebook'),
@@ -315,8 +314,7 @@ function generateSocialLinksData(){
 */
 
    function social_links_admin_menu(){
-      global $pluginrelativedir;
-      //add_options_page('Social Links Settings', 'Social Links', 8,$pluginrelativedir.'/edit-sociallinks.php');
+
       add_management_page('Social Links Settings - About Me', 'About Me', 8,__FILE__,'widget_social_links_settings');
    
       global $plugindir;
