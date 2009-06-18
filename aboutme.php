@@ -74,7 +74,11 @@ array(25,'hellotxt.gif','http://hellotxt.com/user/%userid%','Enter your Hellotxt
 array(26,'hyves.png','http://%userid%.hyves.nl','Enter your Hyves.nl username.','Hyves.nl'),
 array(27,'disqus.png','http://disqus.com/people/%userid%','Enter your Disqus username.','Disqus'),
 array(28,'redgage.png','http://www.redgage.com/%userid%','Enter your RedGage username.','RedGage'),
-array(29,'goodreads.png','http://goodreads.com/%userid%','Enter your GoodReads username','GoodReads')
+array(29,'goodreads.png','http://goodreads.com/%userid%','Enter your GoodReads username','GoodReads'),
+array(30,'qype.png','http://www.qype.com/people/%userid%','Enter your Qype username.','Qype'),
+array(31,'orkut.png','http://www.orkut.com/Main#Profile.aspx?uid=%userid%','Enter your Orkut numeric uid.','Orkut'),
+array(32,'google.png','http://www.google.com/profiles/%userid%','Enter your Google username (without @google.com).','Google Profile'),
+array(33,'googlereader.png','http://www.google.com/reader/shared/%userid%','Enter your Google Reader shared number.','Google Reader')
 );
 
 //comparison based on socialnetwok name
