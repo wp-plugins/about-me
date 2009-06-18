@@ -73,7 +73,8 @@ array(24,'github.png','http://github.com/%userid%','Enter your Github username.'
 array(25,'hellotxt.gif','http://hellotxt.com/user/%userid%','Enter your Hellotxt username.','Hellotxt'),
 array(26,'hyves.png','http://%userid%.hyves.nl','Enter your Hyves.nl username.','Hyves.nl'),
 array(27,'disqus.png','http://disqus.com/people/%userid%','Enter your Disqus username.','Disqus'),
-array(28,'redgage.png','http://www.redgage.com/%userid%','Enter your RedGage username.','RedGage')
+array(28,'redgage.png','http://www.redgage.com/%userid%','Enter your RedGage username.','RedGage'),
+array(29,'goodreads.png','http://goodreads.com/%userid%','Enter your GoodReads username','GoodReads')
 );
 
 //comparison based on socialnetwok name
