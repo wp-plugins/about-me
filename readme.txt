@@ -7,7 +7,7 @@ Tags: widget,sidebar,Social network, profile page,social link,icon links,about m
 
 Requires at least: 2.6
 Tested up to: 2.8
-Stable tag: 1.0.4
+Stable tag: 1.0.5
 
 About me is a sidebar widget that displays icon links to your profile pages on other social networking sites. Based on Social Links.
 
@@ -17,7 +17,7 @@ About me is a sidebar widget that displays icon links to your profile pages on o
 This plugin is forked from [SocialLinks](http://blog.maybe5.com/?page_id=94 "Social Links page")
 
 **What's new**
-Google reader support, Google profile support, Orkut support, GoodReads support, Qype support. Ebay support.
+Google reader support, Google profile support, Orkut support, GoodReads support, Qype support. Ebay support. Now works when WP url is different from blog url (under options->general)
 
 
 **Supported Networks:**
@@ -74,9 +74,14 @@ Google reader support, Google profile support, Orkut support, GoodReads support,
 
 = How do I get another website supported? =
 
-Just post a comment to [my blog](http://abisso.org/index.php/projects/about-me/) or [open a ticket](http://bb.alessiocaiazza.info/about-me/issues/new/) with a link to any user page on that site.
+Just post a comment to [my blog](http://abisso.org/index.php/projects/about-me/) or [open a ticket](http://code.l0g.in/about-me/issues/new/) with a link to any user page on that site.
 
 I will add suggested sites in upcoming releases.
+
+= When I hit 'Add' nothing happens =
+The 'add' button is linked to an ajax function provided by prototype lib. Some other plugins inject their own version of prototype, instead of using the one provided by WP, this result in a broken 'add' button.
+
+If you are using **Use Google Libraries** plugins read [this](http://code.l0g.in/about-me/issue/7/wp-28-final-add-button-is-disabled)
 
 = I've updated from 1.0.0 to 1.0.1 and my widget disappered =
 
