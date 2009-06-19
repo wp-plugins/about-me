@@ -4,7 +4,7 @@ Plugin Name: About Me
 Plugin URI: http://abisso.org/index.php/projects/about-me/
 Description: About Me is a sidebar widget that displays icon links to your profile pages on other social networking sites. Forked from <a href="http://blog.maybe5.com/?page_id=94">Social Links</a>
 Author: Alessio Caiazza
-Version: 1.0.5
+Version: 1.0.6
 Author URI: http://alessiocaiazza.info
 
 /*  Social Links Copyright 2008  Kareem Sultan  (email : kareemsultan@gmail.com) */
@@ -32,7 +32,7 @@ Author URI: http://alessiocaiazza.info
 register_activation_hook(__FILE__,'social_links_install');
 
 //TO DO use these definitions instead
-define('SOCIAL_LINKS_VERSION', '1.0.5');
+define('SOCIAL_LINKS_VERSION', '1.0.6');
 define('SOCIAL_LINKS_DB_VERSION', '1.1');
 
 define('KEY_SITE_ID',0);
