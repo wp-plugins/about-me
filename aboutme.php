@@ -4,7 +4,7 @@ Plugin Name: About Me
 Plugin URI: http://abisso.org/index.php/projects/about-me/
 Description: About Me is a sidebar widget that displays icon links to your profile pages on other social networking sites. Forked from <a href="http://blog.maybe5.com/?page_id=94">Social Links</a>
 Author: Alessio Caiazza
-Version: 1.0.6
+Version: 1.0.7
 Author URI: http://alessiocaiazza.info
 
 /*  Social Links Copyright 2008  Kareem Sultan  (email : kareemsultan@gmail.com) */
@@ -32,7 +32,7 @@ Author URI: http://alessiocaiazza.info
 register_activation_hook(__FILE__,'social_links_install');
 
 //TO DO use these definitions instead
-define('SOCIAL_LINKS_VERSION', '1.0.6');
+define('SOCIAL_LINKS_VERSION', '1.0.7');
 define('SOCIAL_LINKS_DB_VERSION', '1.1');
 
 define('KEY_SITE_ID',0);
@@ -80,7 +80,12 @@ array(31,'orkut.png','http://www.orkut.com/Main#Profile.aspx?uid=%userid%','Ente
 array(32,'google.png','http://www.google.com/profiles/%userid%','Enter your Google username (without @google.com).','Google Profile'),
 array(33,'googlereader.png','http://www.google.com/reader/shared/%userid%','Enter your Google Reader shared number.','Google Reader'),
 array(34,'ebay.png','http://myworld.ebay.com/%userid%','Enter your Ebay username.','Ebay'),
-array(35,'qik.png','http://qik.com/%userid%','Enter your Qik username.','Qik')
+array(35,'qik.png','http://qik.com/%userid%','Enter your Qik username.','Qik'),
+array(36,'anobii.png','http://www.anobii.com/%userid%','Enter your Anobii username.','Anobii'),
+array(37,'deviantart.png','http://%userid%.deviantart.com','Enter your deviantART username.','DeviantART'),
+array(38,'songza.png','http://songza.fm/%userid%','Enter your songza username.','Songza'),
+array(39,'librarything.png','http://www.librarything.com/profile/%userid%','Enter your LibraryThing username.','LibraryThing'),
+
 );
 
 //comparison based on socialnetwok name
@@ -106,8 +111,10 @@ function social_links_wrapper(){
       extract($args);
 
       $options = get_option('widget_social_links');
-      $title = empty($options['title']) ? 'About Me' : $options['title'];
-      $width =  empty($options['width']) ? 20 : $options['width'];
+      if (!isset($title) || empty($title))
+         $title = empty($options['title']) ? 'About Me' : $options['title'];
+      if (!isset($width) || empty($width))
+         $width =  empty($options['width']) ? 20 : $options['width'];
 
       echo $before_widget;
       echo $before_title . $title . $after_title ;
@@ -402,7 +409,7 @@ function widget_social_links_settings(){
 
    if (isset($_POST['saveorder']))
    {
-      saveSortOrder();
+      about_me_saveSortOrder();
    }
 
 
@@ -477,7 +484,7 @@ createSortables();
 
 }//End of widget_social_links_settings
 
-function saveSortOrder(){
+function about_me_saveSortOrder(){
    global $wpdb;
    global $message;
    global $messageClass;
