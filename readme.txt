@@ -3,11 +3,11 @@
 Contributors: nolith
 Donate link: https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=5570803
 
-Tags: widget,sidebar,Social network, profile page,social link,icon links,about me, XFN, Amazon, Wishlist, Bitbucket, Blogs, BlogMarks, Dapx, Delicious, Digg, Facebook, Flickr, FriendFeed, Github, Identi.ca, Jeqq, Last FM, Linked In, My Space, Picasa Web Albums, Plurk, Pownce, Sixent, Stumble Upon, Technorati, Twitter, YouTube, Xing, Hellotxt, Hyves.nl, Hyves.net, Disqus, redgage, GoodReads, Google Profile, Google Reader, Qype, Orkut, ebay, Qik, Anobii, DeviantART, LibraryThing, Songza
+Tags: widget,sidebar,Social network, profile page,social link,icon links,about me, XFN, Amazon, Wishlist, Bitbucket, Blogs, BlogMarks, Dapx, Delicious, Digg, Facebook, Flickr, FriendFeed, Github, Identi.ca, Jeqq, Last FM, Linked In, My Space, Picasa Web Albums, Plurk, Pownce, Sixent, Stumble Upon, Technorati, Twitter, YouTube, Xing, Hellotxt, Hyves.nl, Hyves.net, Disqus, redgage, GoodReads, Google Plus, Google Profile, Google Reader, Qype, Orkut, ebay, Qik, Anobii, DeviantART, LibraryThing, Songza
 
 Requires at least: 2.6
-Tested up to: 2.9.2
-Stable tag: 1.0.7
+Tested up to: 3.3.1
+Stable tag: 1.0.8
 
 About me is a sidebar widget that displays icon links to your profile pages on other social networking sites. Based on Social Links.
 
@@ -17,7 +17,7 @@ About me is a sidebar widget that displays icon links to your profile pages on o
 This plugin is forked from [SocialLinks](http://blog.maybe5.com/?page_id=94 "Social Links page")
 
 **What's new**
-Anobii, DeviantART, LibraryThing, Qik and Songza support.
+Anobii, DeviantART, Google Plus, LibraryThing, Qik and Songza support.
 
 
 **Supported Networks:**
@@ -39,6 +39,7 @@ Anobii, DeviantART, LibraryThing, Qik and Songza support.
 * FriendFeed
 * Github
 * GoodReads
+* Google Plus
 * Google Profile
 * Google Reader
 * Hellotxt
@@ -97,6 +98,7 @@ From version 1.0.0 to 1.0.1 About Me widget has been renamed to 'About Me - Soci
 1. About Me sidebar widget
 
 == Change Log ==
+* 1.0.8 NEW: Google Plus support.
 * 1.0.7 FIX: conflict with find-me-on plugin. Tested with WP 2.9.2
 * 1.0.6 NEW: Anobii, DeviantART, LibraryThing, Qik and Songza support.
 * 1.0.5 NEW:works on subpath installation. goodreads.com, orkut, google profile, google reader, qype, ebay support
