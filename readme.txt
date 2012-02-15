@@ -98,6 +98,7 @@ From version 1.0.0 to 1.0.1 About Me widget has been renamed to 'About Me - Soci
 1. About Me sidebar widget
 
 == Change Log ==
+* 1.0.9 FIX: Fixed the plugin home page
 * 1.0.8 NEW: Google Plus support.
 * 1.0.7 FIX: conflict with find-me-on plugin. Tested with WP 2.9.2
 * 1.0.6 NEW: Anobii, DeviantART, LibraryThing, Qik and Songza support.
