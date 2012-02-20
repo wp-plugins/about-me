@@ -7,7 +7,7 @@ Tags: widget,sidebar,Social network, profile page,social link,icon links,about m
 
 Requires at least: 2.6
 Tested up to: 3.3.1
-Stable tag: 1.0.10
+Stable tag: 1.0.11
 
 About me is a sidebar widget that displays icon links to your profile pages on other social networking sites. Based on Social Links.
 
@@ -17,7 +17,7 @@ About me is a sidebar widget that displays icon links to your profile pages on o
 This plugin is forked from [SocialLinks](http://blog.maybe5.com/?page_id=94 "Social Links page")
 
 **What's new**
-Anobii, DeviantART, Google Plus, LibraryThing, Qik and Songza support.
+Pinterest and Google Plus support.
 
 
 **Supported Networks:**
@@ -52,6 +52,7 @@ Anobii, DeviantART, Google Plus, LibraryThing, Qik and Songza support.
 * My Space
 * Orkut
 * Picasa Web Albums
+* Pinterest
 * Plurk
 * Pownce
 * Qik
@@ -98,6 +99,7 @@ From version 1.0.0 to 1.0.1 About Me widget has been renamed to 'About Me - Soci
 1. About Me sidebar widget
 
 == Change Log ==
+* 1.0.11 NEW: Pinterest support.
 * 1.0.10 FIX: FAQ fix
 * 1.0.9 FIX: Fixed the plugin home page
 * 1.0.8 NEW: Google Plus support.
