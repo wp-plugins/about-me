@@ -7,7 +7,7 @@ Tags: widget,sidebar,Social network, profile page,social link,icon links,about m
 
 Requires at least: 2.6
 Tested up to: 3.3.1
-Stable tag: 1.0.11
+Stable tag: 1.0.12
 
 About me is a sidebar widget that displays icon links to your profile pages on other social networking sites. Based on Social Links.
 
@@ -99,6 +99,7 @@ From version 1.0.0 to 1.0.1 About Me widget has been renamed to 'About Me - Soci
 1. About Me sidebar widget
 
 == Change Log ==
+* 1.0.12 FIX: Official Pinterest image
 * 1.0.11 NEW: Pinterest support.
 * 1.0.10 FIX: FAQ fix
 * 1.0.9 FIX: Fixed the plugin home page
