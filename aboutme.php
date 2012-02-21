@@ -1,10 +1,10 @@
 <?php
 /*
 Plugin Name: About Me
-Plugin URI: http://abisso.org/index.php/projects/about-me/
+Plugin URI: http://abisso.org/projects/about-me/
 Description: About Me is a sidebar widget that displays icon links to your profile pages on other social networking sites. Forked from <a href="http://blog.maybe5.com/?page_id=94">Social Links</a>
 Author: Alessio Caiazza
-Version: 1.0.7
+Version: 1.0.12
 Author URI: http://alessiocaiazza.info
 
 /*  Social Links Copyright 2008  Kareem Sultan  (email : kareemsultan@gmail.com) */
@@ -85,6 +85,8 @@ array(36,'anobii.png','http://www.anobii.com/%userid%','Enter your Anobii userna
 array(37,'deviantart.png','http://%userid%.deviantart.com','Enter your deviantART username.','DeviantART'),
 array(38,'songza.png','http://songza.fm/%userid%','Enter your songza username.','Songza'),
 array(39,'librarything.png','http://www.librarything.com/profile/%userid%','Enter your LibraryThing username.','LibraryThing'),
+array(40,'google-plus.png','%userid%','Enter your complete Google+ profile URL','Google+'),
+array(41,'pinterest.png','http://pinterest.com/%userid%','Enter your Pinterest username','Pinterest'),
 
 );
 
